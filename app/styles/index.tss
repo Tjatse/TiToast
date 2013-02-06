@@ -1,0 +1,7 @@
+".container": {
+	backgroundColor:"#000"
+},
+"#tableView": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+} 

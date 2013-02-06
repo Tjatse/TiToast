@@ -1,0 +1,7 @@
+<Alloy>
+	<View id="toast">
+	    <View id="container">
+	        <Label id="titleLabel"></Label>
+	    </View>
+	</View>
+</Alloy>

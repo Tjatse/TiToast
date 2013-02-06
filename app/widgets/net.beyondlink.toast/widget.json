@@ -1,0 +1,13 @@
+{
+	"id": "net.beyondlink.toast",
+	"name": "net.beyondlink.toast",
+	"description" : "Android like toast message.",
+	"author": "Tjatse",
+	"version": "1.0",
+	"copyright":"Copyright (c) Beyondlink",
+	"license":"LGPL",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"toast, notification, alert",
+	"platforms":"android,ios,mobileweb"
+}
