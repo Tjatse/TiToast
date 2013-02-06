@@ -17,4 +17,4 @@ under `/screenshots` directory.
 
 Problem?
 =======
-[Mail me](thisnamemeansnothing@gmail.com)
+thisnamemeansnothing[at]gmail.com
