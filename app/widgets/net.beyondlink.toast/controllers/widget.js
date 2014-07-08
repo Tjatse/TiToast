@@ -4,10 +4,10 @@ var Toast = {
 	messages: [],
 	// public styles.
 	themes: {
-		'success'	: { backgroundColor: '#2e7710', borderColor: '#1f6303' },
-		'error'		: { backgroundColor: '#b51b1b', borderColor: '#691b1b' },
-		'info'		: { backgroundColor: '#000', borderColor: '#000' },
-		'warning'	: { backgroundColor: '#a68c01', borderColor: '#cfae00' }
+		'success'	: { backgroundColor: '#dff0d8', borderColor: '#d6e9c6', color: '#3c763d' },
+		'error'		: { backgroundColor: '#f2dede', borderColor: '#ebccd1', color: '#a94442' },
+		'info'		: { backgroundColor: '#000', borderColor: '#000', color: '#fff' },
+		'warning'	: { backgroundColor: '#fcf8e3', borderColor: '#faebcc', color: '#8a6d3b' }
 	},
 	// default settings.
 	defaults: {
@@ -86,12 +86,17 @@ var Toast = {
 	    	var msg = Toast.messages[0];
 	    	// theme up.
 	        _(Toast.themes[msg.type]).keys().forEach(function(s){
+                if (s == 'color') {
+                    return;
+                }
 	        	$.container[s] = Toast.themes[msg.type][s];
 	        });
 	        // set text.
 	        $.titleLabel.text = msg.message;
+            // set text color.
+            $.titleLabel.color = Toast.themes[msg.type]['color'];
 			// fade in and trigger 'shown' event.
-        	$.toast.animate({ opacity: 1, duration: msg.options.duration}, function(){
+        	$.toast.animate({ opacity: 0.9, duration: msg.options.duration}, function(){
         		msg.options.shown && msg.options.shown();
         	});
 			// fade out after [DELAY] millisecond(s).
