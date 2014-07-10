@@ -1,27 +1,27 @@
-'#toast': {
-  	left: '10dp',
-  	right: '10dp',
-	bottom: '30dp',
+"#toast": {
+  	left: "10dp",
+  	right: "10dp",
+	bottom: "40dp",
 	height: Ti.UI.SIZE,
   	zIndex: 999,
   	opacity: 0
 },
-'#container': {
+"#container": {
 	height: Ti.UI.SIZE,
 	width: Ti.UI.SIZE,
 	borderRadius: 4,
 	borderWidth: 1,
 	opacity: 0.9
 },
-'#titleLabel': {
+"#titleLabel": {
 	font: {
-		fontSize: '12dp'
+		fontSize: "12dp"
 	},
-	color: '#fff',
+	color: "#fff",
 	height: Ti.UI.SIZE,
 	width: Ti.UI.SIZE,
-	left: '5dp',
-	right: '5dp',
-	top: '5dp',
-	bottom: '5dp'
+	left: "10dp",
+	right: "10dp",
+	top: "5dp",
+	bottom: "5dp"
 }
